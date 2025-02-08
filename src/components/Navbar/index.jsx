@@ -7,6 +7,7 @@ export const Home = () => {
   const navigate = useNavigate();
   return (
     <Container>
+      <Main>
       <Wrapper>
         <Section onClick={() => navigate("/home")} $logo>
           <Logo />
@@ -29,6 +30,7 @@ export const Home = () => {
           <button>Sign in</button>
         </Section>
       </Wrapper>
+      </Main>
       <Outlet />
     </Container>
   );
