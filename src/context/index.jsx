@@ -1,14 +1,13 @@
-import { createContext } from "react";
-
-const Root = createContext()
+import PropertiesProvider from "./properties";
 
 const RootContext = ({children})=>{
-    return 
-    <Root.Provider>
+    return (
+    <>
         <PropertiesProvider>
         {children}
         </PropertiesProvider>
-    </Root.Provider>
+    </>
+    );
 };
 
 export default RootContext;
