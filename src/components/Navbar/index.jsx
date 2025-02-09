@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { navbar } from "../../utils/navbar";
-import { Container, Link, Logo, Section, Wrapper } from "./style";
+import { Container, Main, Link, Logo, Section, Wrapper } from "./style";
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -9,16 +9,16 @@ export const Home = () => {
     <Container>
       <Main>
       <Wrapper>
-        <Section onClick={() => navigate("/home")} $logo>
+        <Section onClick={() => navigate('/home')} $logo>
           <Logo />
           <h3>Houzing</h3>
         </Section>
         <Section>
-          {navbar.map(({ id, title, path }) => {
+          {navbar.map(({ title, path }, index ) => {
             return (
               <Link
-                className={({ isActive }) => isActive && "active"}
-                key={id}
+                className={({ isActive }) => isActive && 'active'}
+                key={index}
                 to={path}
               >
                 {title}
