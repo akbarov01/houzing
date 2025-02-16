@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-body{
+body {
   font-family: "Montserrat", sans-serif;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -21,8 +21,8 @@ body{
   --padding: 0 130px;
 }
 
-.title{
-  font-family: 'Montserrat';
+.title {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
@@ -32,11 +32,20 @@ body{
   color: #0d263b;
 }
 
-.subTitle{
-  font-family: 'Montserrat';
+.subTitle {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   color: #0d263b;
+}
+
+.info {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #696969;
 }
